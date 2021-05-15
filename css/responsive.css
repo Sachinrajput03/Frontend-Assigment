@@ -1,0 +1,72 @@
+@media(min-width:1621px) and (max-width:1920px) {
+    .navbar-nav {
+        margin-left: 66%;
+    }
+    .people-headng-bg h5 {
+        top: 161%;
+        left: 22%;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .navbar-toggler {
+        background-color: black !important;
+        border: black !important;
+    }
+    .dropdown-menu.show {
+        display: none;
+    }
+    .navbar-nav {
+        margin-left: 0%;
+    }
+    .dropdown{
+        display: none;
+    }
+    .banner-text p {
+        font-size: 13px;
+    }
+    .scroll-section img {
+        width: 12%;
+    }
+    .about-section {
+        margin: 0px 0px;
+    }
+    .about-text {
+        margin-top: 19px;
+    }
+    .about-image img {
+        margin: 30px 0px;
+    }
+    .side-fixed-button {
+        bottom: 210px;
+    }
+    .side-fixed-button2 {
+        bottom: 142px;
+    }
+    .people-headng-bg h5 {
+        top: 347%;
+    }
+    .image img {
+        margin: 10px 0px;
+    }
+    .text {
+        margin: 34px 0px;
+    }
+    .text .form-control {
+        margin: 12px 0px;
+    }
+    .call-to-action {
+        margin: 12px 0px;
+    }
+    .logo-side h5 {
+        margin-top: 20px;
+    }
+    .contact-side h5 {
+        color: white;
+        margin: 22px 0px;
+    }
+    .contact-side h6 {
+        margin-top: 21px;
+    }
+}

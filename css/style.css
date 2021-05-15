@@ -1,0 +1,535 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: 'Mulish', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.bg-dark {
+  background-color: white !important;
+}
+
+.navbar-dark .navbar-brand {
+  color: #000;
+  font-size: 19px;
+}
+
+.navbar-dark .navbar-brand:hover {
+  color: #000;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #000;
+  margin: 0px 13px;
+  font-size: 15px;
+}
+
+.btn-primary {
+  color: #000;
+  background-color: unset;
+  border: none;
+}
+
+.btn-primary:hover {
+  color: #000;
+  background-color: unset;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show>.btn-primary.dropdown-toggle {
+  color: #000;
+  background-color: unset;
+  border: none;
+}
+
+.navbar-dark .navbar-nav .nav-link:focus {
+  color: #000;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #000;
+}
+
+.navbar-nav {
+  margin-left: 50%;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 139%;
+  left: -366%;
+  min-width: 40rem;
+  padding: 0.5rem 14px;
+  margin: .125rem 0 0;
+
+}
+
+.dropdown-item {
+  display: block;
+  width: 100%;
+  padding: 13px 30px;
+}
+
+.dropdown-item i {
+  color: #2a78ef;
+  font-size: 21px;
+  background: #d8d5d5ed;
+  height: 35px;
+  width: 35px;
+  text-align: center;
+  padding: 6px 0px;
+  border-radius: 50%;
+  margin-right: 10px;
+  transition: 0.5s ease;
+}
+
+.dropdown-item:hover {
+  color: #16181b;
+  text-decoration: none;
+  background-color: unset;
+}
+
+.dropdown-item:hover i {
+  transform: scale(1.2);
+  transition: 0.5s ease;
+}
+
+/* Dropdown Animation Start */
+
+.dropdown-menu {
+  display: block;
+  visibility: hidden;
+  opacity: 0;
+  transform: translatex(-120px);
+  transition: .6s ease all;
+}
+
+.dropdown-menu.show {
+  background-image: url(../images/call-to-action-1-a.png);
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  transform: translatex(0px);
+  transition: .6s ease all;
+}
+
+/* Dropdown Animation End */
+
+/* Banner Start */
+
+.bg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/banner2.jpg);
+  background-size: cover;
+  filter: grayscale(2);
+  background-position-y: 82%;
+}
+
+.banner-text {
+  text-align: center;
+  padding: 16% 0%;
+}
+
+.banner-text h2 {
+  color: white;
+}
+
+.banner-text p {
+  color: #bfbebe;
+  font-size: 14px;
+}
+
+.scroll-section {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.scroll-section img {
+  width: 4%;
+}
+
+.scroll-section h4 {
+  color: white;
+  font-size: 17px;
+}
+
+/* Banner End */
+
+/* About Section Start */
+
+.about-section {
+  margin: 80px 0px;
+}
+
+.about-text {
+  margin-top: 70px;
+}
+
+.about-text h5 {
+  color: black;
+  font-weight: 700 !important;
+}
+
+.about-text p {
+  margin: 10px 0px;
+  color: #7b7a7a;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 25px;
+}
+
+/* About Section Start */
+
+/* Team Section Start */
+
+.team-headng h4 {
+  margin-bottom: 20px;
+}
+
+.team-card img {
+  width: 95%;
+  border-radius: 20px;
+}
+
+.team-card h5 {
+  margin: 12px 0px;
+}
+
+.team-card p {
+  color: #7b7a7a;
+  font-size: 18px;
+}
+
+/* Team Section End */
+
+/* Fixed Icon Start */
+
+.side-fixed-button {
+  position: fixed;
+  bottom: 70px;
+  right: 20px;
+  z-index: 10000;
+}
+
+.side-fixed-button a {
+  display: block;
+  background: #2e7f9c;
+  width: 50px;
+  height: 50px;
+  font-size: 34px;
+  text-align: center;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 100px;
+  transition: all 0.5s;
+}
+
+.side-fixed-button a:after {
+  color: #fff;
+  font-size: 21px;
+  line-height: 0px;
+  position: absolute;
+  top: 26px;
+  margin-left: 2px;
+  font-weight: 400;
+  transition: all 1s;
+  content: "Give Us a Call!";
+  text-align: left;
+  opacity: 0;
+  transition: all 0.5s;
+  font-size: 16px;
+}
+
+.side-fixed-button a i {
+  color: #fff;
+  transition: all 0.5s;
+  pointer-events: none;
+  padding-top: 16px;
+  font-size: 26px;
+}
+
+.side-fixed-button a i:before {
+  pointer-events: none;
+}
+
+.side-fixed-button a:hover {
+  width: 220px;
+  display: block;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.5);
+}
+
+.side-fixed-button a:hover i {
+  margin-left: -130px;
+}
+
+.side-fixed-button a:hover:after {
+  display: inline;
+  opacity: 1;
+}
+
+.side-fixed-button2 {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  z-index: 10000;
+}
+
+.side-fixed-button2 a {
+  display: block;
+  background: #26b924;
+  width: 50px;
+  height: 50px;
+  font-size: 32px;
+  text-align: center;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 100px;
+  transition: all 0.5s;
+}
+
+.side-fixed-button2 a:after {
+  color: #fff;
+  font-size: 21px;
+  line-height: 0px;
+  position: absolute;
+  top: 26px;
+  margin-left: 2px;
+  font-weight: 400;
+  transition: all 1s;
+  content: "Whatsapp Us!";
+  text-align: left;
+  opacity: 0;
+  transition: all 0.5s;
+  font-size: 16px;
+}
+
+.side-fixed-button2 a i {
+  color: #fff;
+  transition: all 0.5s;
+  pointer-events: none;
+  padding-top: 8px;
+  font-size: 26px;
+}
+
+.side-fixed-button2 a i:before {
+  pointer-events: none;
+}
+
+.side-fixed-button2 a:hover {
+  width: 220px;
+  display: block;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.5);
+}
+
+.side-fixed-button2 a:hover i {
+  margin-left: -130px;
+}
+
+.side-fixed-button2 a:hover:after {
+  display: inline;
+  opacity: 1;
+}
+
+/* Fixed Icon End */
+
+/* Our People Start */
+
+.people-headng-bg{
+    margin: 40px 0px;
+}
+.people-headng-bg h4 {
+  color: transparent;
+  -webkit-text-stroke: 0.6px #b5b5b5;
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.people-headng-bg h5 {
+  position: absolute;
+  top: 278%;
+  left: 11%;
+  color: black;
+  font-weight: 700 !important;
+  font-size: 21px;
+}
+.image img{
+  width: 100%;
+  border-radius: 20px;
+}
+
+/* Our People End */
+
+/* Call To Action Start */
+
+.text{
+  margin: 80px 0px;
+}
+
+.text p{
+  color: #7b7a7a;
+}
+
+.call-to-action{
+  margin: 45px 0px;
+}
+
+.call-image img{
+  width: 70%;
+}
+
+.text .form-control{
+  padding: 24px 16px;
+  background: #e6e5e5;
+  border: none;
+}
+
+.button {
+  position: relative;
+  display: inline-flex;
+  text-decoration: none;
+  color: #fff;
+  background-color: #76abe9;
+  padding-left: 2rem;
+  overflow: hidden;
+  z-index: 1;
+  align-items: center;
+  box-shadow: 0px 3px 4px -4px rgba(0, 0, 0, 0.75);
+}
+.button::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  width: 100%;
+  height: 100%;
+  background-color: #4A90E2;
+  z-index: -1;
+  transition: transform 750ms;
+}
+.button span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 2rem;
+  padding: 1rem;
+  overflow: hidden;
+  background-color: #4A90E2;
+}
+.button svg {
+  max-width: 20px;
+  width: 100%;
+  height: auto;
+  max-height: 18px;
+  fill: white;
+}
+.button:hover::before {
+  transform: scaleX(1);
+}
+.button:hover svg {
+  -webkit-animation: moveArrow 750ms;
+          animation: moveArrow 750ms;
+}
+.content a{
+  color: white;
+  text-decoration: none;
+}
+
+@-webkit-keyframes moveArrow {
+  0% {
+    transform: translateX(0px);
+  }
+  49% {
+    transform: translateX(50px);
+  }
+  50% {
+    transform: translateX(-50px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes moveArrow {
+  0% {
+    transform: translateX(0px);
+  }
+  49% {
+    transform: translateX(50px);
+  }
+  50% {
+    transform: translateX(-50px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+/* Call To Action End */
+
+/* Footer Start */
+
+.footer{
+  background-color: black;
+  padding-top: 4%;
+}
+.logo-side h4{
+  color: white;
+}
+.logo-side h5{
+  color: white;
+  margin-top: 119px;
+}
+.logo-side i{
+  color: white;
+  margin-right: 12px;
+}
+.contact-side h5{
+  color: white;
+}
+.contact-side h6{
+  color: white;
+  font-size: 16px;
+  margin-top: 60px;
+}
+.highlight{
+  color: orangered;
+  margin: 20px 0px;
+}
+.contact-side ul{
+  display: flex;
+}
+.contact-side ul li{
+  list-style:none;
+}
+.contact-side ul li a{
+ color: white;
+ margin-right: 15px;
+ text-decoration: none;
+}
+.highlight2{
+  color: gray;
+}
+hr{
+  color: white !important;
+}
+.copyright{
+  border-top: 1px solid white;
+  margin-top: 15px;
+}
+.copyright p{
+  color: #bfbebe;
+  text-align: center;
+  margin: 15px 0px;
+}
+
+/* Footer End */
